@@ -1,0 +1,30 @@
+[
+  
+  {
+    "id": "perfect-ed",
+    "title": "Perfect",
+    "artist": "Ed Sheeran",
+    "slug": "perfect",
+    "key": "G",
+    "content": "[G]I found a love for [Em]me\n[Em]Darling just dive right [C]in\n[Am]And follow my lead\n[G]Well I found a girl, [Em]beautiful and sweet",
+    "cover": ""
+  },
+  {
+    "id": "shapeofyou-ed",
+    "title": "Shape of You",
+    "artist": "Ed Sheeran",
+    "slug": "shape-of-you",
+    "key": "C#m",
+    "content": "[C#m]The club isn't the best place to [E]find a lover\n[C#m]So the bar is where I [E]go\n[C#m]Me and my friends at the [E]table doing shots",
+    "cover": ""
+  },
+  {
+    "id": "letitbe-beatles",
+    "title": "Let It Be",
+    "artist": "The Beatles",
+    "slug": "let-it-be",
+    "key": "C",
+    "content": "[C]When I find myself in [G]times of trouble\n[Am]Mother Mary comes to [F]me\n[C]Speaking words of [G]wisdom, let it [F]be",
+    "cover": ""
+  }
+]
