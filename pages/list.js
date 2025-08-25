@@ -44,13 +44,14 @@ const SongList = () => {
     <div className="container mx-auto px-4 md:px-20 py-6">
       <h1 className="text-2xl font-bold text-blue-600 mb-4">Songs List</h1>
 
-      {/* Dropdown Filter */}
-      <div className="mb-6">
-        <div className="relative inline-block w-full md:w-64">
+      {/* Filter Dropdown */}
+      <div className="mb-6 flex items-center space-x-2">
+        <span className="font-semibold text-gray-700">Filter:</span>
+        <div className="relative inline-block">
           <select
             value={filter}
             onChange={(e) => setFilter(e.target.value)}
-            className="w-full border-2 border-blue-500 rounded-lg px-4 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-blue-400 appearance-none bg-white text-gray-700"
+            className="border-2 border-blue-500 rounded-lg px-4 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-blue-400 appearance-none bg-white text-gray-700"
           >
             <option value="alphabetical">Alphabetical</option>
             <option value="fast-english">Fast English</option>
@@ -74,16 +75,16 @@ const SongList = () => {
         </div>
       </div>
 
-      {/* Song List - one per row */}
-      <div className="space-y-3">
+      {/* Song Cards */}
+      <div className="space-y-4">
         {filteredSongs.map((song, idx) => (
           <Link
             key={idx}
             href={`/song/${song.slug}`}
-            className="block w-full border border-gray-300 rounded-lg px-4 py-3 hover:bg-blue-50 transition"
+            className="block border border-gray-200 rounded-lg shadow-sm p-4 hover:shadow-md hover:border-blue-400 transition"
           >
-            <span className="font-semibold text-blue-600">{song.title}</span>
-            <span className="text-gray-600 ml-2">({song.artist})</span>
+            <h2 className="text-lg font-semibold text-blue-600">{song.title}</h2>
+            <p className="text-gray-600">{song.artist}</p>
           </Link>
         ))}
       </div>
@@ -92,4 +93,3 @@ const SongList = () => {
 };
 
 export default SongList;
-
