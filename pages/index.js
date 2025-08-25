@@ -17,7 +17,7 @@ export default function Home() {
       
       {/* Responsive Heading */}
       <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent mb-8 text-center">
-        Cords Of Songs
+        Chords Of Songs
       </h1>
 
       {/* Responsive Search Bar */}
