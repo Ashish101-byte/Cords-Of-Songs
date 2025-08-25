@@ -6,6 +6,7 @@ import songs from "../data/songs.json";
 const Header = () => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
+  const [isSearching, setIsSearching] = useState(false); // mobile search state
 
   const handleSearchChange = (e) => {
     const value = e.target.value;
@@ -26,6 +27,7 @@ const Header = () => {
   const clearSearch = () => {
     setQuery("");
     setResults([]);
+    setIsSearching(false); // reset mobile view
   };
 
   const handlePrint = () => {
@@ -34,25 +36,53 @@ const Header = () => {
 
   return (
     <>
-      {/* Navbar (always inside header) */}
       <header className="bg-white shadow-md sticky top-0 z-50">
         <div className="container mx-auto flex items-center justify-between gap-4 py-4 px-4 md:px-20 relative">
-          {/* Logo */}
-          <div className="text-2xl font-bold text-blue-600 whitespace-nowrap">
-            <Link href="/">ChordsOfSongs</Link>
-          </div>
+          {/* Logo (hidden on mobile when searching) */}
+          {!isSearching && (
+            <div className="text-2xl font-bold text-blue-600 whitespace-nowrap md:block">
+              <Link href="/">ChordsOfSongs</Link>
+            </div>
+          )}
 
           {/* Search Bar */}
-          <div className="flex-grow max-w-lg relative">
+          <div
+            className={`flex items-center relative transition-all duration-300 
+              ${isSearching ? "w-full" : "flex-grow max-w-lg"} `}
+          >
+            {/* Back Arrow (mobile only) */}
+            {isSearching && (
+              <button
+                onClick={() => clearSearch()}
+                className="md:hidden mr-2 flex-shrink-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-6 h-6 text-gray-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+            )}
+
             <input
               type="text"
               value={query}
+              onFocus={() => setIsSearching(true)} // expand on mobile focus
               onChange={handleSearchChange}
               placeholder="Search songs..."
               className="w-full border border-gray-300 rounded-full pl-4 pr-14 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
 
-            {/* Clear Button */}
+            {/* Clear/Search Button */}
             <button
               type="button"
               onClick={clearSearch}
@@ -115,36 +145,40 @@ const Header = () => {
         </div>
       </header>
 
-      {/* Mobile Nav - OUTSIDE header */}
-      {/* Mobile Only Button Container */}
-<div
-  className="container mx-auto px-4 block md:hidden"
-  style={{ marginTop: "2px", marginBottom: "2px", lineHeight: "1.2", height: '20px' }}
->
-  <nav className="flex justify-center font-semibold">
-    <Link
-      href="/"
-      className="text-gray-700 hover:text-blue-600 border-r border-blue-600 pr-4"
-    >
-      Home
-    </Link>
-    <Link
-      href="/list"
-      className="text-gray-700 hover:text-blue-600 border-r border-blue-600 px-4"
-    >
-      List
-    </Link>
-    <button
-      onClick={handlePrint}
-      className="text-gray-700 hover:text-blue-600 pl-4"
-    >
-      Print
-    </button>
-  </nav>
-</div>
-
+      {/* Mobile Nav (unchanged) */}
+      <div
+        className="container mx-auto px-4 block md:hidden"
+        style={{
+          marginTop: "2px",
+          marginBottom: "2px",
+          lineHeight: "1.2",
+          height: "20px",
+        }}
+      >
+        <nav className="flex justify-center font-semibold">
+          <Link
+            href="/"
+            className="text-gray-700 hover:text-blue-600 border-r border-blue-600 pr-4"
+          >
+            Home
+          </Link>
+          <Link
+            href="/list"
+            className="text-gray-700 hover:text-blue-600 border-r border-blue-600 px-4"
+          >
+            List
+          </Link>
+          <button
+            onClick={handlePrint}
+            className="text-gray-700 hover:text-blue-600 pl-4"
+          >
+            Print
+          </button>
+        </nav>
+      </div>
     </>
   );
 };
 
 export default Header;
+
