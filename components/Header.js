@@ -38,12 +38,13 @@ const Header = () => {
     <>
       <header className="bg-white shadow-md sticky top-0 z-50">
         <div className="container mx-auto flex items-center justify-between gap-4 py-4 px-4 md:px-20 relative">
-          {/* Logo (hidden on mobile when searching) */}
-          {!isSearching && (
-            <div className="text-2xl font-bold text-blue-600 whitespace-nowrap md:block">
-              <Link href="/">ChordsOfSongs</Link>
-            </div>
-          )}
+          {/* Logo (always visible on desktop, hidden on mobile when searching) */}
+          <div
+            className={`text-2xl font-bold text-blue-600 whitespace-nowrap md:block 
+              ${isSearching ? "hidden md:block" : "block"}`}
+          >
+            <Link href="/">ChordsOfSongs</Link>
+          </div>
 
           {/* Search Bar */}
           <div
@@ -53,7 +54,8 @@ const Header = () => {
             {/* Back Arrow (mobile only) */}
             {isSearching && (
               <button
-                onClick={() => clearSearch()}
+                onClick={clearSearch}
+                aria-label="Back"
                 className="md:hidden mr-2 flex-shrink-0"
               >
                 <svg
@@ -86,6 +88,7 @@ const Header = () => {
             <button
               type="button"
               onClick={clearSearch}
+              aria-label="Clear search"
               className="absolute right-0 top-1/2 -translate-y-1/2 bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-blue-700 transition"
             >
               <svg
@@ -145,7 +148,7 @@ const Header = () => {
         </div>
       </header>
 
-      {/* Mobile Nav (unchanged) */}
+      {/* Mobile Nav */}
       <div
         className="container mx-auto px-4 block md:hidden"
         style={{
@@ -181,4 +184,3 @@ const Header = () => {
 };
 
 export default Header;
-
