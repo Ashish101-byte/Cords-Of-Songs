@@ -1,0 +1,41 @@
+[
+  
+  {
+    "id": "perfect-ed",
+    "title": "Perfect",
+    "artist": "Ed Sheeran",
+    "slug": "perfect",
+    "key": "G",
+    "content": "[G]I found a love for [Em]me\n[Em]Darling just dive right [C]in\n[Am]And follow my lead\n[G]Well I found a girl, [Em]beautiful and sweet G]I found a love for [Em]me\n[Em]Darling just dive right [C]in\n",
+    "cover": ""
+  },
+  {
+    "id": "shapeofyou-ed",
+    "title": "Shape of You",
+    "artist": "Ed Sheeran",
+    "slug": "shape-of-you",
+    "key": "C#m",
+    "content": "[C#m]The club isn't the best place to [E]find a lover\n[C#m]So the bar is where I [E]go\n[C#m]Me and my friends at the [E]table doing shots",
+    "cover": ""
+  },
+  {
+    "id": "letitbe-beatles",
+    "title": "Let It Be",
+    "artist": "The Beatles",
+    "slug": "let-it-be",
+    "key": "C",
+    "content": "[C]When I find myself in [G]times of trouble\n[Am]Mother Mary comes to [F]me\n[C]Speaking words of [G]wisdom, let it [F]be",
+    "cover": ""
+  },
+  {
+    "id": "pavannaam-Yabesh Nag",
+    "title": "Pavaan Naam",
+    "artist": "Yabesh Nag",
+    "slug": "pavan-naam",
+    "key": "G",
+    "content": "Verse 1\n Sa[Em]ri dunia [C]mein gung raha tere naam\n Yeshu na[D]am yeshu [Em]naam\n Sa[Em]ri bigdi bana [C]raha tera naam\n Yeshu na[D]am yeahu [Em]naam \n Chorus\n Y[G]ougya hai tu [Am]yogya hai\n S[D]tuti Prasansa[G] ke\n Aur[Em] koi nahi [Am]kabhi nahi\n Ter[C]i jagha le s[D]akta hai\n Tere[C] pavan naam ke [D]main\n Jai jai k[C]ar karta[Em] hu\n ....\n ....\nVarse 2\n [Em]Aasmaan ke neche\n [C]Manushaw ke beech main\n [C]Koe aur naam nahi...\n [D]Koe aur naam nahi x2\n [C]Papo se deta [D]nasaam yeshu naam\n [Em]Har gunaho jo tod ta hai\n [C]Papo se deta [D]nasaam yeshu naam\n [G]Har gunaho jo tod ta hai", 
+    "cover": "",
+    "language": "hindi",
+    "speed": "fast"
+  }
+]

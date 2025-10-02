@@ -1,0 +1,380 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body { padding-top: 60px; } */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+:root{--bg:#ffffff;--muted:#6b7280;--card:#ffffff;--accent:#0f172a}
+html,body,#__next{height:100%}
+body{font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,Arial;background:#f8fafc;margin:0;color:#0f172a}
+.container{max-width:1100px;margin:28px auto;padding:0 18px; margin-top: 0; height: 70px;}
+.header{background:var(--accent);color:white}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.logo{font-weight:700;color:white;text-decoration:none}
+.nav-link{margin-left:14px;color:rgba(255,255,255,0.9);text-decoration:none}
+.top-row{display:flex;gap:12px;align-items:center;justify-content:space-between}
+.title{font-size:28px;margin:14px 0}
+.search{padding:10px 12px;border-radius:10px;border:1px solid #e6edf3;max-width:420px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:12px}
+.card{background:var(--card);border:1px solid #e6eef6;border-radius:10px;box-shadow:0 1px 3px rgba(15,23,42,0.04);overflow:hidden}
+.card-link{text-decoration:none;color:inherit;display:block;padding:16px}
+.card-title{font-weight:600;font-size:16px}
+.card-artist{color:var(--muted);margin-top:6px;font-size:13px}
+.song-header{display:flex;flex-direction:column;margin-bottom:8px}
+.song-title{font-size:24px;margin:6px 0}
+.meta{color:var(--muted);font-size:13px}
+.controls button{margin-right:8px;padding:8px 12px;border-radius:8px;border:1px solid #e6eef6;background:white}
+.song-box{background:#fff;padding:18px;border-radius:8px;border:1px solid #e6eef6}
+.chord-line{margin-bottom:8px}
+.chords-row{font-family:monospace;color:#0b0f1a;margin-bottom:2px}
+.lyrics-row{color:#0b0f1a}
+.chord-token,.lyric-token{display:inline-block;min-width:6px;padding:0 4px}
+.chord-token{color:#034;font-weight:700}
+@media (max-width:700px){.top-row{flex-direction:column;align-items:flex-start}.grid{grid-template-columns:1fr}}
+
+
+/* === Header Styles === */
+.header {
+  background-color: #1e3a8a; /* dark blue-gray for modern look */
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #f39c12;
+}
+
+/* Search bar center */
+.search-bar {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  max-width: 400px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 6px 12px;
+  border: none;
+  background-color: #1e3a8a;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #1e3a8a;
+}
+
+
+/* Light blue header theme */
+.header {
+  background-color: #60a5fa; /* light blue */
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #1e3a8a;
+}
+
+/* Search bar styling */
+.search-bar input {
+  flex: 1;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 6px 12px;
+  border: none;
+  background-color: #3b82f6; /* matching blue */
+  color: white;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #2563eb;
+}
+
+/* PDF button styling */
+.pdf-button {
+  padding: 6px 12px;
+  background-color: #3b82f6;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pdf-button:hover {
+  background-color: #2563eb;
+}
+
+/* Ensure page content is not hidden by header */
+/* body {
+  padding-top: 60px;
+} */
+
+/* Lyrics two-column layout */
+.lyrics {
+  column-count: 2;
+  column-gap: 40px;
+  white-space: pre-wrap;
+}
+
+
+/* Screenshot-like menubar */
+.header {
+  background-color: #60a5fa; /* light blue */
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px 16px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.logo-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.search-bar {
+  flex: 1;
+  margin: 0 16px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+.pdf-button {
+  padding: 6px 12px;
+  background-color: #3b82f6;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pdf-button:hover {
+  background-color: #2563eb;
+}
+
+
+/* Simplified menubar with shades of black and light blue */
+.header {
+  background-color: #1a1a1a; /* deep black */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #3b82f6; /* light blue accent */
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px; /* same as song page width */
+  margin: 0 auto;
+  padding: 8px 16px;
+}
+
+.logo-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.search-bar {
+  flex: 1;
+  margin: 0 16px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2a2a2a; /* lighter black */
+  color: white;
+  outline: none;
+}
+
+.search-bar input::placeholder {
+  color: #9ca3af; /* gray placeholder */
+}
+
+.pdf-button {
+  padding: 6px 12px;
+  background-color: #3b82f6; /* light blue */
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pdf-button:hover {
+  background-color: #2563eb; /* darker blue */
+}
+
+/* Ensure page content is below header */
+/* body {
+  padding-top: 60px;
+} */
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #print-area, #print-area * {
+    visibility: visible;
+  }
+  #print-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  /* Hide KeySelector and any other UI stuff */
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* ----------------------------------------- */
+@media screen {
+  .print-only { display: none !important; }
+}
+
+@media print {
+  .screen-only { display: none !important; }
+  .no-print { display: none !important; }
+  body, #print-area {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+  }
+  @page {
+    margin: 1cm;
+  }
+}
+/* ------------------------------------------ */
+
+@media print {
+  .screen-only { display: none !important; }
+  .no-print { display: none !important; }
+
+  /* Reset everything so nothing adds height */
+  body, html, #__next, main, #print-area {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+    box-shadow: none !important;
+    border: none !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Prevent blank pages from page breaks */
+  #print-area > * {
+    page-break-inside: avoid !important;
+  }
+
+  @page {
+    margin: 1cm; /* keeps text readable but avoids overflow */
+  }
+}
+
