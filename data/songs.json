@@ -1,32 +1,4 @@
 [
-  
-  {
-    "id": "perfect-ed",
-    "title": "Perfect",
-    "artist": "Ed Sheeran",
-    "slug": "perfect",
-    "key": "G",
-    "content": "[G]I found a love for [Em]me\n[Em]Darling just dive right [C]in\n[Am]And follow my lead\n[G]Well I found a girl, [Em]beautiful and sweet G]I found a love for [Em]me\n[Em]Darling just dive right [C]in\n",
-    "cover": ""
-  },
-  {
-    "id": "shapeofyou-ed",
-    "title": "Shape of You",
-    "artist": "Ed Sheeran",
-    "slug": "shape-of-you",
-    "key": "C#m",
-    "content": "[C#m]The club isn't the best place to [E]find a lover\n[C#m]So the bar is where I [E]go\n[C#m]Me and my friends at the [E]table doing shots",
-    "cover": ""
-  },
-  {
-    "id": "letitbe-beatles",
-    "title": "Let It Be",
-    "artist": "The Beatles",
-    "slug": "let-it-be",
-    "key": "C",
-    "content": "[C]When I find myself in [G]times of trouble\n[Am]Mother Mary comes to [F]me\n[C]Speaking words of [G]wisdom, let it [F]be",
-    "cover": ""
-  },
   {
     "id": "pavannaam-Yabesh Nag",
     "title": "Pavaan Naam",
@@ -34,6 +6,50 @@
     "slug": "pavan-naam",
     "key": "G",
     "content": "Verse 1\n Sa[Em]ri dunia [C]mein gung raha tere naam\n Yeshu na[D]am yeshu [Em]naam\n Sa[Em]ri bigdi bana [C]raha tera naam\n Yeshu na[D]am yeahu [Em]naam \n Chorus\n Y[G]ougya hai tu [Am]yogya hai\n S[D]tuti Prasansa[G] ke\n Aur[Em] koi nahi [Am]kabhi nahi\n Ter[C]i jagha le s[D]akta hai\n Tere[C] pavan naam ke [D]main\n Jai jai k[C]ar karta[Em] hu\n ....\n ....\nVarse 2\n [Em]Aasmaan ke neche\n [C]Manushaw ke beech main\n [C]Koe aur naam nahi...\n [D]Koe aur naam nahi x2\n [C]Papo se deta [D]nasaam yeshu naam\n [Em]Har gunaho jo tod ta hai\n [C]Papo se deta [D]nasaam yeshu naam\n [G]Har gunaho jo tod ta hai", 
+    "cover": "",
+    "language": "hindi",
+    "speed": "fast"
+  },
+  {
+    "id": "Sthuthi Karna Aaradhana Karna(Stuti Karna)",
+    "title": "Sthuthi Karna Aaradhana Karna (Stuti karna)",
+    "artist": "Unknown",
+    "slug": "sthuthi-karna-aaradhana-karna",
+    "key": "",
+    "content": "| Chorus |\nSthuthi Karna Aaradhana Karna\nMujhe Aanand Hai (x2)\nPraarthanaa Aur Vachan Maanan Karna\nMujhe Aanand Hai (x2)\n| Verse 1 |\nMere Dil Mein Yishu Masih Aaya\nMujhe Aanand Hai(x2)\nYe Duniyaa Na De Sake Vaisaa Aanand\nMujhe Aanand Hai (x2)\n-------------------------------------\n https://chords-of-songs.vercel.app \n-------------------------------------\n| Verse 2 |\nPaapon Se Usne Mujhe Chhudaya\nMujhe Aanand Hai(x2)\nApne Laahu Se Dhokar Mujhe Shuddh Kiya\nMujhe Aanand Hai(x2)\n| Varse 3 |\nUddhaar Kaa Maarg Mujhe Bataya\nMujhe Aanand Hai(x2)\nSwarg Raajy Ka Vaaris Mujhe Banaya\nMujhe Aanand Hai (2)\n\n", 
+    "cover": "",
+    "language": "hindi",
+    "speed": "fast"
+  },
+  {
+    "id": "gloriousDay-Passion",
+    "title": "Glorious Day",
+    "artist": "Passion",
+    "slug": "glorious-day",
+    "key": "D",
+    "content": "| Verse 1|\nI was [D]buried beneath my shame\nWho could [Bm7]carry that kind of weight\nIt was my [Gsus2]tomb Till I[D] met You\nI was [D]breathing but not alive\nAll my [Bm7]failures I tried to hide\nIt was my [Gsus2]tomb Till I[D] met You\nYou [Gsus2]called my name And I ran out of that [D]grave\n| Chorus |\n[D]Out of the [Gsus2]darkness Into Your glorio[D]us day\n[D]You called my [Gsus2]name And I ran out of that[Bm7] grave\nOut of the [Gsus2]darkness Into Your gloriou[D]s day\n| Verse 2 |\nNow Your [D]mercy has saved my soul\nNow Your [Bm7]freedom is all I know\nThe old made [Gsus2]new, Jesus, when I[D] met You\nYou [Gsus2]called my name And I ran out of that [D]grave\n| Chorus |\n[D]Out of the [Gsus2]darkness Into Your glorio[D]us day\n[D]You called my [Gsus2]name And I ran out of that[Bm7] grave\nOut of the [Gsus2]darkness Into Your gloriou[D]s day\n| Bridge |\n[D]I needed rescue, My sin was heavy\n[D]But chains break at the weight of Your glory\n[D]I needed shelter, I was an orphan\n[D]Now You call me a citizen of heaven\n[D]When I was broken, You were my healing\n[D]Now Your love is the air that I'm breathing\n[Bm7]I have a future[Asus4], My eyes are open\n'Cause when You called my [Gsus2]name\nI ran out of that [D]grave\n| Chorus |\n[D]Out of the [Gsus2]darkness Into Your glorio[D]us day\n[D]You called my [Gsus2]name And I ran out of that[Bm7] grave\nOut of the [Gsus2]darkness Into Your gloriou[D]s day\n-------------------------------------\n https://chords-of-songs.vercel.app \n-------------------------------------\n\n\n\n", 
+    "cover": "",
+    "language": "english",
+    "speed": "fast"
+  },
+  {
+    "id": "avarnit-Rebekah Tribhuvan, Mark Tribhuvan",
+    "title": "Avarnit (Teri Stuti Prasansa Ho)",
+    "artist": "Rebekah Tribhuvan, Mark Tribhuvan",
+    "slug": "avarnit-teri-stuti-prasansa-ho",
+    "key": "D",
+    "content": "| Chorus |\nTeri [D]stuti prashansa[A] ho\nTeri har pal mahima [D]ho\n\nTu [D]avarnit hai Tu [G]sundar hai\nMera [A]pehala pehala[G] pyaar hai\n| Verse 1 |\nMe[D]ri nirashao [A]mein\nMeri aasha ba[D]na tu\nMeri khamoshi[A]yon ko\nSamajha tune pra[D]bhu\n| Verse 2 |\nD[D]il ki gaharaiyon [A]mein\nBasata tu hi pr[D]abhu\nTeri ichhaon [A]ko mai\nPura karta ch[D]alu\n-------------------------------------\n https://chords-of-songs.vercel.app \n-------------------------------------\n\n", 
+    "cover": "",
+    "language": "hindi",
+    "speed": "fast"
+  },
+  {
+    "id": "terapayarhaimahan-Victor Benjamin ",
+    "title": "Tera Payar Hai Mahan",
+    "artist": "Victor Benjamin ",
+    "slug": "tera-payar-hai-mahan",
+    "key": "D",
+    "content": "| Chorus |\nTera [D]pyar hai mahaan\nTera [A]pyar hai yahaan\nMain jo [D]pehlay murda[A] tha\nTu ne [D]dali mujh main jaan\nKyun na bolun phir main teri jai jai [A]kar\nKyun na bolun phir main teri jai jai [D]kar\nJai jai [C]kar jai jai[G] kar\nTu nay [A]mere liye kya kuch na k[D]iya\n| Verse 1 |\nMeri su[D]rat bigdi thi\nMera d[A]il tha khali\nTu nay si[G]ncha lahu say\nTaake aaee har[D]yali\nKyun na bolun phir main teri jai jai k[A]ar...\n\n| Verse 2 |\nApni r[D]uh say bhar diya\nApni sh[A]akti mujh ko di\nTaake d[G]un main gawahi\nTeri g[D]i uthnay ki\nKyun na boolun phir main teri jai jai k[A]ar...\n| Verse 3 |\nAae j[D]iwan main khushi\nPaai a[A]bdi zindgi\nTu hai zi[G]nda shafia\nTune y[D]eh hai Kiya\nKyun na boolun phir main teri jai jai k[A]ar...\n-------------------------------------\n https://chords-of-songs.vercel.app \n-------------------------------------\n", 
     "cover": "",
     "language": "hindi",
     "speed": "fast"
