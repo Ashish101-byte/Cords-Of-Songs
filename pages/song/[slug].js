@@ -98,13 +98,13 @@ export default function SongPage() {
       </Head>
 
       <main className='container' style={{ maxWidth: 900, margin: '0 auto', padding: 16, fontFamily: 'monospace' }}>
-        <h1 style={{ margin: '6px 0' }}>{song.title}</h1>
+        <h1 style={{ margin: '6px 0', fontSize:'30px',fontWeight:'bold',fontFamily:'"Muse Display Harmony", "Open Sans", -apple-system, Roboto, "Helvetic' }}>{song.title}</h1>
 
         {/* Artist + Key + Toggle */}
         <div style={{ display: 'flex', alignItems: 'center', marginBottom: 12 }}>
-          <p style={{ margin: 0 }}>{song.artist} — Key: {currentKey}</p>
+          <p style={{ margin: 0, fontSize:'15px',fontWeight:'bold',fontFamily:'"Muse Display Harmony", "Open Sans", -apple-system, Roboto, "Helvetic' }}>{song.artist} — Key: {currentKey}</p>
           <button
-            style={{ marginLeft: 16, padding: '4px 8px', cursor: 'pointer' }}
+            style={{ marginLeft: 16, padding: '4px 8px', cursor: 'pointer', fontFamily:'"Muse Display Harmony", "Open Sans", -apple-system, Roboto, "Helvetic' }}
             onClick={() => setTwoColumns(prev => !prev)}
           >
             {twoColumns ? 'Two Columns' : 'One Column'}
@@ -131,8 +131,8 @@ export default function SongPage() {
             width: '100%'
           }}
         >
-          <h1 style={{ marginBottom: '4px' }}>{song.title}</h1>
-          <p style={{ marginTop: 0, marginBottom: '8px' }}>
+          <h1 style={{ marginBottom: '4px',fontSize: '30px',fontWeight:'bold',fontFamily:'"Muse Display Harmony", "Open Sans", -apple-system, Roboto, "Helvetic' }}>{song.title}</h1>
+          <p style={{ marginTop: 0, marginBottom: '8px',fontWeight:'bold',fontFamily:'"Muse Display Harmony", "Open Sans", -apple-system, Roboto, "Helvetic' }}>
             {song.artist} — Key: {currentKey}
           </p>
 
@@ -140,7 +140,7 @@ export default function SongPage() {
           <hr
             style={{
               border: 'none',
-              borderTop: '1px solid #1e40af',
+              borderTop: '1px solid gray',
               margin: '8px 0 16px 0',
               width: '100%'
             }}
